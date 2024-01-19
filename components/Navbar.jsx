@@ -1,15 +1,48 @@
+"use client"
+import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 
 const Navbar = () => {
-  return (
-    <div className='m-4 flex flex-col gap-4'>
-        <Link href={`/`} className='hover:line-through'>Home</Link>
-        <Link href={`/whoAreWe`} className='hover:line-through'>Who are We</Link>
-        <Link href={`/whatWeDo`} className='hover:line-through'>What we Do</Link>
-        <Link href={`/contact`} className='hover:line-through'>Contact</Link>
-    </div>
-  )
+    return (
+        <div className='m-4 w-1/4 font-medium uppercase'>
+            <div className='flex flex-col justify-around h-full'>
+                {/* LOGO & MENU */}
+                <div className='flex flex-col items-center'>
+                    <Image src="/CompanyLogo.png" alt="image" width={100} height={100} className='mb-10' />
+                    <ul className='w-full'>
+                        <li className='p-4 hover:line-through border-t-2 border-b-2'><Link href={`/`}>Home</Link></li>
+                        <li className='p-4 list-none group border-b-2'>
+                            What we Do
+                            <div className='hidden group-hover:flex flex-col gap-4 p-4 font-normal normal-case'>
+                                <Link href={`/whatWeDo`} className='hover:line-through border-b-2'>General Info</Link>
+                                <Link href={`/`} className='hover:line-through border-b-2'>Option 1</Link>
+                                <Link href={`/`} className='hover:line-through border-b-2'>Option 2</Link>
+                                <Link href={`/`} className='hover:line-through border-b-2'>Option 3</Link>
+                            </div>
+                        </li>
+                        <li className='p-4 hover:line-through border-b-2'><Link href={`/whoAreWe`}>Who we Are</Link></li>
+                    </ul>
+                </div>
+                {/* CONTACT */}
+                <div className=''>
+                    <p className='mt-10 mb-4'>Contact</p>
+                    <span className='capitalize block m-2'>Adress: <span className='font-light'>C/example, 29001 Málaga</span></span>
+                    <span className='capitalize block m-2'>Phone: <span className='font-light'> +34 952 999 999</span></span>
+                    <span className='capitalize block m-2'>Email: <span className='font-light'>company@email.com</span></span>
+                </div>
+                {/* SOCIAL */}
+                <div className=''>
+                    <p className='mt-10 mb-4'>Social Media</p>
+                    <div className='flex gap-2'>
+                        <Image src="/InstagramLogo.jpg" alt="image" width={50} height={50} className='mb-10' />
+                        <Image src="/LinkedinLogo.png" alt="image" width={50} height={50} className='mb-10' />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    )
 }
 
 export default Navbar
