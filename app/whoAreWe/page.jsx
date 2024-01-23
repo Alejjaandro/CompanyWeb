@@ -21,11 +21,11 @@ const Page = () => {
     };
 
     return (
-        <div className='bg-gray-200 ml-[25%] w-full flex justify-center'>
+        <div className='bg-gray-200 md:ml-[25%] w-full flex justify-center'>
             <div className='bg-white w-[90%]'>
                 {/* WHO WE ARE */}
                 <div className='my-20'>
-                    <h1 className='text-4xl m-4 uppercase font-medium'>Who are We</h1>
+                    <h1 className='md:text-4xl text-2xl m-4 uppercase font-medium'>Who are We</h1>
                     <p className='m-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis quam repellendus. Aspernatur veniam fuga incidunt? Deleniti animi, accusantium, id mollitia illo, eos voluptatibus fugiat eveniet officia quia saepe maiores?
                     </p>
@@ -35,7 +35,7 @@ const Page = () => {
                 </div>
                 {/* WE ARE ..... */}
                 <div className='my-20'>
-                    <h1 className='text-4xl m-4 uppercase font-medium'>Our History</h1>
+                    <h1 className='md:text-4xl text-2xl m-4 uppercase font-medium'>Our History</h1>
                     <p className='m-4'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
                         Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
@@ -43,28 +43,28 @@ const Page = () => {
                 </div>
                 {/* VALUES */}
                 <div className='my-20'>
-                    <h1 className='text-4xl m-4 uppercase font-medium'>Our Values</h1>
+                    <h1 className='md:text-4xl text-2xl m-4 uppercase font-medium'>Our Values</h1>
                     <div className="w-full grid grid-cols-2 text-center">
                         <a href='#value1'
-                            className={"mr-1 mb-1 p-20 font-bold bg-[url('/TeamWork.jpg')] bg-cover hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
+                            className={"mr-1 mb-1 md:p-20 p-10 font-bold bg-[url('/TeamWork.jpg')] bg-cover hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value1")}
                         >
                             Team Work
                         </a>
                         <a href='#value2'
-                            className={"mb-1 p-20 font-bold bg-[url('/CompanyProject.jpg')] bg-cover hover:opacity-100" + (show2 ? " opacity-100" : " opacity-80")}
+                            className={"mb-1 md:p-20 p-10 font-bold bg-[url('/CompanyProject.jpg')] bg-cover hover:opacity-100" + (show2 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value2")}
                         >
                             Company Project
                         </a>
                         <a href='#value3'
-                            className={"mr-1 p-20 font-bold bg-[url('/Compromise.jpg')] bg-cover hover:opacity-100" + (show3 ? " opacity-100" : " opacity-80")}
+                            className={"mr-1 md:p-20 p-10 text-center font-bold bg-[url('/Compromise.jpg')] bg-cover hover:opacity-100" + (show3 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value3")}
                         >
                             Compromise
                         </a>
                         <a href='#value4'
-                            className={"p-20 font-bold bg-[url('/Environment.jpg')] bg-cover hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")}
+                            className={"md:p-20 p-10 font-bold bg-[url('/Environment.jpg')] bg-cover hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value4")}
                         >
                             Environment
@@ -72,7 +72,7 @@ const Page = () => {
                     </div>
 
                     {show1 && (
-                        <div className='w-1/2 p-4' id='value1'>
+                        <div className='p-4' id='value1'>
                             <h1 className='text-xl font-bold mb-4'>Team Work</h1>
                             <p className='text-s'>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
@@ -81,7 +81,7 @@ const Page = () => {
                         </div>
                     )}
                     {show2 && (
-                        <div className='w-1/2 p-4' id='value1'>
+                        <div className='p-4' id='value1'>
                             <h1 className='text-xl font-bold mb-4'>Company Project</h1>
                             <p className='text-s'>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
@@ -90,7 +90,7 @@ const Page = () => {
                         </div>
                     )}
                     {show3 && (
-                        <div className='w-1/2 p-4' id='value1'>
+                        <div className='p-4' id='value1'>
                             <h1 className='text-xl font-bold mb-4'>Compromise</h1>
                             <p className='text-s'>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
@@ -99,7 +99,7 @@ const Page = () => {
                         </div>
                     )}
                     {show4 && (
-                        <div className='w-1/2 p-4' id='value1'>
+                        <div className='p-4' id='value1'>
                             <h1 className='text-xl font-bold mb-4'>Environment</h1>
                             <p className='text-s'>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
