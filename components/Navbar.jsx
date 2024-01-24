@@ -17,9 +17,8 @@ const Navbar = () => {
                     <ul className='w-full'>
                         <li className='p-4 hover:line-through border-t-2 border-b-2'><Link href={`/`}>Home</Link></li>
                         <li className='p-4 list-none group border-b-2'>
-                            What we Do
+                            <Link href={`/whatWeDo`} className='hover:line-through'>What we Do</Link>
                             <div className='hidden group-hover:flex flex-col gap-4 p-4 font-normal normal-case'>
-                                <Link href={`/whatWeDo`} className='hover:line-through border-b-2'>General Info</Link>
                                 <Link href={`/`} className='hover:line-through border-b-2'>Option 1</Link>
                                 <Link href={`/`} className='hover:line-through border-b-2'>Option 2</Link>
                                 <Link href={`/`} className='hover:line-through border-b-2'>Option 3</Link>
@@ -66,9 +65,8 @@ const Navbar = () => {
                             <ul className='w-full'>
                                 <li className='p-4 hover:line-through border-t-2 border-b-2'><Link href={`/`}>Home</Link></li>
                                 <li className='p-4 list-none group border-b-2'>
-                                    What we Do
+                                    <Link href={`/whatWeDo`} className='hover:line-through'>What we Do</Link>
                                     <div className='hidden group-hover:flex flex-col gap-4 p-4 font-normal normal-case'>
-                                        <Link href={`/whatWeDo`} className='hover:line-through border-b-2'>General Info</Link>
                                         <Link href={`/`} className='hover:line-through border-b-2'>Option 1</Link>
                                         <Link href={`/`} className='hover:line-through border-b-2'>Option 2</Link>
                                         <Link href={`/`} className='hover:line-through border-b-2'>Option 3</Link>
