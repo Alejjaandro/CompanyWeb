@@ -1,68 +1,47 @@
 'use client'
 import Link from 'next/link';
 import React, { useState } from 'react'
-import { FaArrowAltCircleLeft } from "react-icons/fa";
-import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const Page = () => {
 
-    const options = ['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'];
-    const options2 = [
+    const options = [
         {
-            option: 'Option 1',
+            option: 'Consulting',
             image: '/Consulting.png'
         },
         {
-            option: 'Option 2',
+            option: 'Design',
             image: '/Design.jpg'
         },
         {
-            option: 'Option 3',
+            option: 'Environment',
+            image: '/Environment.jpg'
+        },
+        {
+            option: 'Compromise',
+            image: '/Compromise.jpg'
+        },
+        {
+            option: 'Company Project',
+            image: '/CompanyProject.jpg'
+        },
+        {
+            option: 'Environment',
             image: '/Environment.jpg'
         }
     ];
 
-    const [selectedOption, setSelectedOption] = useState(options[1]);
-
-    const previousOption = () => {
-        if (options.indexOf(selectedOption) - 1 < 0) {
-            setSelectedOption(options[options.length - 1]);
-        } else {
-            setSelectedOption(options[options.indexOf(selectedOption) - 1]);
-        }
-    };
-
-    const nextOption = () => {
-        if (options.indexOf(selectedOption) + 1 === options.length) {
-            setSelectedOption(options[0]);
-        } else {
-            setSelectedOption(options[options.indexOf(selectedOption) + 1]);
-        }
-    };
-
-    // console.log(selectedOption);
-
     return (
-        <div className='w-full overflow-hidden md:ml-[25%] h-screen flex'>
-            <div className='m-4 absolute top-1/2 z-[1]'>
-                <button onClick={()=> previousOption()}><FaArrowAltCircleLeft color='black' size={35} /></button>
-            </div>
-            
+        <div className='w-full overflow-hidden md:ml-[25%] h-screen grid grid-cols-1 md:grid-cols-2 gap-2 p-2 bg-gray-100'>
             {options.map((option, index) => (
                 <div
+                    style={{ backgroundImage: `url(${option.image})` }}
+                    className="bg-cover bg-center flex justify-center items-center opacity-50 hover:opacity-100 hover:scale-[1.02] transition duration-500 ease-in-out"
                     key={index}
-                    className={`min-w-[33%] flex justify-center items-center transition duration-300 ease-in-out transform text-xl uppercase bg-[url('/Environment.jpg')] bg-cover ${selectedOption === option
-                            ? `font-medium text-white border-4 border-white`
-                            : "opacity-50 bg-cover text-black"
-                        }`}
                 >
-                    <Link href={'/'}>{option}</Link>
+                    <Link href={'/'} className='w-full p-2 bg-white uppercase text-xl md:text-2xl font-semibold text-center'>{option.option}</Link>
                 </div>
             ))}
-            
-            <div className='m-4 absolute top-1/2 right-0'>
-                <button onClick={()=> nextOption()}><FaArrowAltCircleRight color='black' size={35} /></button>
-            </div>
         </div>
     )
 }
