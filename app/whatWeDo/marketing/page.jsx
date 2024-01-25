@@ -21,21 +21,29 @@ const Page = () => {
     };
 
     return (
-        <div className='md:ml-[25%] w-full h-screen bg-gray-100 px-8'>
+        <div className='md:ml-[25%] w-full min-h-screen bg-gray-100 px-8'>
             <div className='bg-white h-full'>
                 <div className='pt-8 pl-8'>
                     <h1 className='uppercase text-2xl'>
                         <span className='font-[200]'>What we Do: </span>
-                        <span className='font-medium'>Company Project</span>
+                        <span className='font-medium'>Marketing and Branding</span>
                     </h1>
                 </div>
-                
-                <img className='mt-4 w-full' src="/CompanyProject.jpg" alt="" />
+
+                <img className='mt-4 w-full' src="/Marketing.png" alt="" />
 
                 <div className='pt-8 pl-8'>
-                    <h1 className='text-2xl mb-8'>Company Project</h1>
+                    <h1 className='text-2xl mb-8'>Marketing and Branding</h1>
+                    <p className='my-8'>
+                        At [COMPANY NAME], we pride ourselves on a commitment to excellence that is evident in every project we undertake. 
+                        We strongly believe in the power of teamwork, innovation, and sustainable commitment to create lasting positive impacts. 
+                        Our cross-functional team collaborates closely, blending expertise and creativity to exceed expectations. 
+                        From initial concept to final implementation, each project phase is managed with precision and care. 
+                        We are dedicated not only to achieving our clients goals but also to contributing to a better future through responsible business practices. 
+                        Join us as we showcase our latest endeavors in driving change and fostering growth.
+                    </p>
 
-                    <div className="w-full grid grid-cols-2 text-center">
+                    <div className="w-full mb-4 grid grid-cols-2 text-center">
                         <a href='#value1'
                             className={"mr-1 mb-1 md:p-20 p-10 font-bold bg-[url('/TeamWork.jpg')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value1")}

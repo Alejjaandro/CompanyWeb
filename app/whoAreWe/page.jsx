@@ -21,10 +21,10 @@ const Page = () => {
     };
 
     return (
-        <div className='bg-gray-200 md:ml-[25%] w-full flex justify-center'>
+        <div className='bg-gray-200 md:ml-[25%] w-full min-h-screen flex justify-center'>
             <div className='bg-white w-[90%]'>
                 {/* WHO WE ARE */}
-                <div className='my-20'>
+                <div className='my-10'>
                     <h1 className='md:text-4xl text-2xl m-4 uppercase font-medium'>Who are We</h1>
                     <p className='m-4'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis quam repellendus. Aspernatur veniam fuga incidunt? Deleniti animi, accusantium, id mollitia illo, eos voluptatibus fugiat eveniet officia quia saepe maiores?
@@ -42,7 +42,7 @@ const Page = () => {
                     </p>
                 </div>
                 {/* VALUES */}
-                <div className='my-20'>
+                <div>
                     <h1 className='md:text-4xl text-2xl m-4 uppercase font-medium'>Our Values</h1>
                     <div className="w-full grid grid-cols-2 text-center">
                         <a href='#value1'
@@ -64,7 +64,7 @@ const Page = () => {
                             Compromise
                         </a>
                         <a href='#value4'
-                            className={"md:p-20 p-10 font-bold bg-[url('/Environment.jpg')] bg-cover bg-center hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")}
+                            className={"md:p-20 p-10 font-bold text-white bg-[url('/Environment.jpg')] bg-cover bg-center hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value4")}
                         >
                             Environment

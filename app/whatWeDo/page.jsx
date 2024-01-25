@@ -15,24 +15,24 @@ const Page = () => {
 
         },
         {
-            option: 'Environment',
-            image: '/Environment.jpg',
-            url: '/environment'
+            option: 'Digital Transformation',
+            image: '/DigitalTransform.png',
+            url: '/digitalTransformation'
         },
         {
-            option: 'Compromise',
-            image: '/Compromise.jpg',
-            url: '/compromise'
+            option: 'Project Management',
+            image: '/ProjectManagement.png',
+            url: '/projectManagement'
         },
         {
-            option: 'Company Project',
-            image: '/CompanyProject.jpg',
-            url: '/companyProject'
+            option: 'Marketing and Branding',
+            image: '/Marketing.png',
+            url: '/marketing'
         },
         {
-            option: 'Environment',
-            image: '/Environment.jpg',
-            url: '/environment'
+            option: 'Financial Advisory',
+            image: '/Financial.png',
+            url: '/financialAdvisory'
         }
     ];
 

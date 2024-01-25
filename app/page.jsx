@@ -8,10 +8,10 @@ export default function Home() {
                 {/* BG IMAGES */}
                 <div className="grid grid-cols-2 overflow-hidden w-full h-full">
                     {/* Images are just examples */}
-                    <div className="bg-[url('/Design.jpg')] bg-cover bg-center" />
-                    <div className="bg-[url('/Compromise.jpg')] bg-cover bg-center" />
                     <div className="bg-[url('/Consulting.png')] bg-cover bg-center" />
-                    <div className="bg-[url('/CompanyProject.jpg')] bg-cover bg-center" />
+                    <div className="bg-[url('/DigitalTransform.png')] bg-cover bg-center" />
+                    <div className="bg-[url('/Financial.png')] bg-cover bg-center" />
+                    <div className="bg-[url('/Marketing.png')] bg-cover bg-center" />
                 </div>
                 {/* TITLE */}
                 <div className="relative top-[-50%] mt-[-78.5px] text-center">

@@ -21,10 +21,10 @@ const Navbar = () => {
                             <div className='hidden group-hover:flex flex-col gap-4 p-4 font-normal normal-case'>
                                 <Link href="/whatWeDo/consulting" className='hover:line-through border-b-2'>Consulting</Link>
                                 <Link href="/whatWeDo/design" className='hover:line-through border-b-2'>Design</Link>
-                                <Link href="/whatWeDo/environment" className='hover:line-through border-b-2'>Environment</Link>
-                                <Link href="/whatWeDo/compromise" className='hover:line-through border-b-2'>Compromise</Link>
-                                <Link href="/whatWeDo/companyProject" className='hover:line-through border-b-2'>Company Project</Link>
-                                <Link href="/whatWeDo/environment" className='hover:line-through border-b-2'>Environment</Link>
+                                <Link href="/whatWeDo/digitalTransformation" className='hover:line-through border-b-2'>Digital Tranformation</Link>
+                                <Link href="/whatWeDo/projectManagement" className='hover:line-through border-b-2'>Project Management</Link>
+                                <Link href="/whatWeDo/marketing" className='hover:line-through border-b-2'>Marketing and Branding</Link>
+                                <Link href="/whatWeDo/financialAdvisory" className='hover:line-through border-b-2'>Financial Advisory</Link>
                             </div>
                         </li>
                         <li className='p-4 hover:line-through border-b-2'><Link href={`/whoAreWe`}>Who we Are</Link></li>
@@ -72,10 +72,10 @@ const Navbar = () => {
                                     <div className='hidden group-hover:flex flex-col gap-4 p-4 font-normal normal-case'>
                                         <Link href="/whatWeDo/consulting" className='hover:line-through border-b-2'>Consulting</Link>
                                         <Link href="/whatWeDo/design" className='hover:line-through border-b-2'>Design</Link>
-                                        <Link href="/whatWeDo/environment" className='hover:line-through border-b-2'>Environment</Link>
-                                        <Link href="/whatWeDo/compromise" className='hover:line-through border-b-2'>Compromise</Link>
-                                        <Link href="/whatWeDo/companyProject" className='hover:line-through border-b-2'>Company Project</Link>
-                                        <Link href="/whatWeDo/environment" className='hover:line-through border-b-2'>Environment</Link>
+                                        <Link href="/whatWeDo/digitalTransformation" className='hover:line-through border-b-2'>Digital Tranformation</Link>
+                                        <Link href="/whatWeDo/projectManagement" className='hover:line-through border-b-2'>Project Management</Link>
+                                        <Link href="/whatWeDo/marketing" className='hover:line-through border-b-2'>Marketing and Branding</Link>
+                                        <Link href="/whatWeDo/financialAdvisory" className='hover:line-through border-b-2'>Financial Advisory</Link>
                                     </div>
                                 </li>
                                 <li className='p-4 hover:line-through border-b-2'><Link href={`/whoAreWe`}>Who we Are</Link></li>

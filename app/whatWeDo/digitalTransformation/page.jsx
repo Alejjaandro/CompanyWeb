@@ -21,21 +21,28 @@ const Page = () => {
     };
 
     return (
-        <div className='md:ml-[25%] w-full h-screen bg-gray-100 px-8'>
+        <div className='md:ml-[25%] w-full min-h-screen bg-gray-100 px-8'>
             <div className='bg-white h-full'>
                 <div className='pt-8 pl-8'>
                     <h1 className='uppercase text-2xl'>
                         <span className='font-[200]'>What we Do: </span>
-                        <span className='font-medium'>Environment</span>
+                        <span className='font-medium'>Digital Transformation</span>
                     </h1>
                 </div>
-                
-                <img className='mt-4 w-full' src="/Environment.jpg" alt="" />
+
+                <img className='mt-4 w-full' src="/DigitalTransform.png" alt="" />
 
                 <div className='pt-8 pl-8'>
-                    <h1 className='text-2xl mb-8'>Environment</h1>
+                    <h1 className='text-2xl mb-8'>Digital Transformation</h1>
+                    <p className='my-8'>
+                        At [COMPANY NAME], our ethos is built on the foundation of compromise. 
+                        We understand that the best results stem from a balance of ideas, where every voice is heard and every concern is addressed. 
+                        Our commitment to our clients goes beyond mere agreements; it&apos;s a mutual promise to work towards a common goal with integrity and respect. 
+                        By fostering an environment where compromise is not about conceding but about reaching greater heights together, we create solutions that are not just satisfactory, but exemplary. 
+                        Let us join hands with your vision, embracing compromise as the key to unlocking unparalleled success.
+                    </p>
 
-                    <div className="w-full grid grid-cols-2 text-center">
+                    <div className="mb-4 w-full grid grid-cols-2 text-center">
                         <a href='#value1'
                             className={"mr-1 mb-1 md:p-20 p-10 font-bold bg-[url('/TeamWork.jpg')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value1")}

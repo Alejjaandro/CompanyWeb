@@ -21,7 +21,7 @@ const Page = () => {
     };
 
     return (
-        <div className='md:ml-[25%] w-full h-screen bg-gray-100 px-8'>
+        <div className='md:ml-[25%] w-full min-h-screen bg-gray-100 px-8'>
             <div className='bg-white h-full'>
                 <div className='pt-8 pl-8'>
                     <h1 className='uppercase text-2xl'>
@@ -29,13 +29,20 @@ const Page = () => {
                         <span className='font-medium'>Design</span>
                     </h1>
                 </div>
-                
+
                 <img className='mt-4 w-full' src="/Design.jpg" alt="" />
 
                 <div className='pt-8 pl-8'>
-                    <h1 className='text-2xl mb-8'>Design</h1>
+                    <h1 className='text-2xl'>Design</h1>
+                    <p className='my-8'>
+                        At [COMPANY NAME], we understand that design is more than just aesthetics—it&apos;s a comprehensive approach to problem-solving that combines functionality with innovation.
+                        Our design philosophy is rooted in the belief that form should always follow function.
+                        We specialize in creating designs that speak to the audience, encapsulate your brand essence, and convey your message with clarity and impact.
+                        Our dedicated team of designers employs the latest trends and technologies to ensure that every concept evolves from a mere idea to a tangible reality that stands out in the market.
+                        Join us on a creative journey where every line, curve, and color is crafted with purpose and precision to bring your vision to life.
+                    </p>
 
-                    <div className="w-full grid grid-cols-2 text-center">
+                    <div className="w-full mb-4 grid grid-cols-2 text-center">
                         <a href='#value1'
                             className={"mr-1 mb-1 md:p-20 p-10 font-bold bg-[url('/TeamWork.jpg')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value1")}

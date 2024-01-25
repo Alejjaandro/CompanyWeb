@@ -21,21 +21,29 @@ const Page = () => {
     };
 
     return (
-        <div className='md:ml-[25%] w-full h-screen bg-gray-100 px-8'>
+        <div className='md:ml-[25%] w-full min-h-screen bg-gray-100 px-8'>
             <div className='bg-white h-full'>
                 <div className='pt-8 pl-8'>
                     <h1 className='uppercase text-2xl'>
                         <span className='font-[200]'>What we Do: </span>
-                        <span className='font-medium'>Compromise</span>
+                        <span className='font-medium'>Project Management</span>
                     </h1>
                 </div>
-                
-                <img className='mt-4 w-full' src="/Compromise.jpg" alt="" />
+
+                <img className='mt-4 w-full' src="/projectManagement.png" alt="" />
 
                 <div className='pt-8 pl-8'>
-                    <h1 className='text-2xl mb-8'>Compromise</h1>
+                    <h1 className='text-2xl mb-8'>Project Management</h1>
+                    <p className='my-8'>
+                        At [COMPANY NAME], our commitment to the environment is at the core of every decision we make.
+                        We strive to create solutions that not only benefit our clients but also contribute to a greener, more sustainable future.
+                        Our approach is holistic, integrating eco-friendly practices into our workflows and encouraging a culture of responsibility.
+                        We believe that every small step towards environmental consciousness is a leap towards preserving our planet for future generations.
+                        Our initiatives range from reducing waste to embracing renewable resources, all while maintaining the highest standards of quality and service.
+                        Join us as we embark on this vital journey, planting the seeds for a healthier world through conscious environmental stewardship.
+                    </p>
 
-                    <div className="w-full grid grid-cols-2 text-center">
+                    <div className="w-full mb-4 grid grid-cols-2 text-center">
                         <a href='#value1'
                             className={"mr-1 mb-1 md:p-20 p-10 font-bold bg-[url('/TeamWork.jpg')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value1")}

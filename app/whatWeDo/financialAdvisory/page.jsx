@@ -26,24 +26,24 @@ const Page = () => {
                 <div className='pt-8 pl-8'>
                     <h1 className='uppercase text-2xl'>
                         <span className='font-[200]'>What we Do: </span>
-                        <span className='font-medium'>Consulting</span>
+                        <span className='font-medium'>Financial Advisory</span>
                     </h1>
                 </div>
 
-                <img className='mt-4' src="/Consulting.png" alt="" />
+                <img className='mt-4 w-full' src="/Financial.png" alt="" />
 
                 <div className='pt-8 pl-8'>
-                    <h1 className='text-2xl mb-8'>Consulting</h1>
+                    <h1 className='text-2xl mb-8'>Financial Advisory</h1>
                     <p className='my-8'>
-                        In the fast-paced world of business, [COMPANY NAME] stands out as a beacon of guidance and expertise.
-                        Our consulting services are tailored to navigate complex challenges and unlock sustainable growth.
-                        We provide unparalleled support, drawing from a deep well of industry knowledge and a network of seasoned experts.
-                        Our goal is to empower your business with the tools and insights needed for success.
-                        Through personalized service, we align with your vision and work tirelessly to bring it to fruition.
-                        Experience the transformative impact of our consulting work as we lead the way to your company&apos;s prosperous future.
+                        At [COMPANY NAME], we pride ourselves on a commitment to excellence that is evident in every project we undertake. 
+                        We strongly believe in the power of teamwork, innovation, and sustainable commitment to create lasting positive impacts. 
+                        Our cross-functional team collaborates closely, blending expertise and creativity to exceed expectations. 
+                        From initial concept to final implementation, each project phase is managed with precision and care. 
+                        We are dedicated not only to achieving our clients goals but also to contributing to a better future through responsible business practices. 
+                        Join us as we showcase our latest endeavors in driving change and fostering growth.
                     </p>
 
-                    <div className="w-full grid grid-cols-2 text-center">
+                    <div className="w-full mb-4 grid grid-cols-2 text-center">
                         <a href='#value1'
                             className={"mr-1 mb-1 md:p-20 p-10 font-bold bg-[url('/TeamWork.jpg')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value1")}
@@ -54,7 +54,7 @@ const Page = () => {
                             className={"mb-1 md:p-20 p-10 font-bold bg-[url('/CompanyProject.jpg')] bg-cover bg-center hover:opacity-100" + (show2 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value2")}
                         >
-                            Company Project
+                            Financial Advisory
                         </a>
                         <a href='#value3'
                             className={"mr-1 md:p-20 p-10 text-center font-bold bg-[url('/Compromise.jpg')] bg-cover bg-center hover:opacity-100" + (show3 ? " opacity-100" : " opacity-80")}
