@@ -19,9 +19,12 @@ const Navbar = () => {
                         <li className='p-4 list-none group border-b-2'>
                             <Link href={`/whatWeDo`} className='hover:line-through'>What we Do</Link>
                             <div className='hidden group-hover:flex flex-col gap-4 p-4 font-normal normal-case'>
-                                <Link href={`/`} className='hover:line-through border-b-2'>Option 1</Link>
-                                <Link href={`/`} className='hover:line-through border-b-2'>Option 2</Link>
-                                <Link href={`/`} className='hover:line-through border-b-2'>Option 3</Link>
+                                <Link href="/whatWeDo/consulting" className='hover:line-through border-b-2'>Consulting</Link>
+                                <Link href="/whatWeDo/design" className='hover:line-through border-b-2'>Design</Link>
+                                <Link href="/whatWeDo/environment" className='hover:line-through border-b-2'>Environment</Link>
+                                <Link href="/whatWeDo/compromise" className='hover:line-through border-b-2'>Compromise</Link>
+                                <Link href="/whatWeDo/companyProject" className='hover:line-through border-b-2'>Company Project</Link>
+                                <Link href="/whatWeDo/environment" className='hover:line-through border-b-2'>Environment</Link>
                             </div>
                         </li>
                         <li className='p-4 hover:line-through border-b-2'><Link href={`/whoAreWe`}>Who we Are</Link></li>
