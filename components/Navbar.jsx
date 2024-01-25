@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className='w-1/4 mt-[10%] fixed font-medium uppercase hidden md:flex flex-col'>
+            <div className='w-1/4 h-[90%] mt-[10%] fixed font-medium uppercase hidden md:flex flex-col justify-around'>
                 {/* LOGO & MENU */}
                 <div className='flex flex-col items-center'>
                     <Image src="/CompanyLogo.png" alt="image" width={150} height={150} className='mb-10' />
@@ -62,7 +62,7 @@ const Navbar = () => {
                         ? "fixed h-screen bg-white ease-in duration-500"
                         : "fixed left-[-100%] ease-in duration-500"
                 }>
-                    <div className="flex justify-between w-full">
+                    <div className="flex w-full">
 
                         <div>
                             <ul className='w-full'>
@@ -70,9 +70,12 @@ const Navbar = () => {
                                 <li className='p-4 list-none group border-b-2'>
                                     <Link href={`/whatWeDo`} className='hover:line-through'>What we Do</Link>
                                     <div className='hidden group-hover:flex flex-col gap-4 p-4 font-normal normal-case'>
-                                        <Link href={`/`} className='hover:line-through border-b-2'>Option 1</Link>
-                                        <Link href={`/`} className='hover:line-through border-b-2'>Option 2</Link>
-                                        <Link href={`/`} className='hover:line-through border-b-2'>Option 3</Link>
+                                        <Link href="/whatWeDo/consulting" className='hover:line-through border-b-2'>Consulting</Link>
+                                        <Link href="/whatWeDo/design" className='hover:line-through border-b-2'>Design</Link>
+                                        <Link href="/whatWeDo/environment" className='hover:line-through border-b-2'>Environment</Link>
+                                        <Link href="/whatWeDo/compromise" className='hover:line-through border-b-2'>Compromise</Link>
+                                        <Link href="/whatWeDo/companyProject" className='hover:line-through border-b-2'>Company Project</Link>
+                                        <Link href="/whatWeDo/environment" className='hover:line-through border-b-2'>Environment</Link>
                                     </div>
                                 </li>
                                 <li className='p-4 hover:line-through border-b-2'><Link href={`/whoAreWe`}>Who we Are</Link></li>

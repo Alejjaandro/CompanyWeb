@@ -46,25 +46,25 @@ const Page = () => {
                     <h1 className='md:text-4xl text-2xl m-4 uppercase font-medium'>Our Values</h1>
                     <div className="w-full grid grid-cols-2 text-center">
                         <a href='#value1'
-                            className={"mr-1 mb-1 md:p-20 p-10 font-bold bg-[url('/TeamWork.jpg')] bg-cover hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
+                            className={"mr-1 mb-1 md:p-20 p-10 font-bold bg-[url('/TeamWork.jpg')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value1")}
                         >
                             Team Work
                         </a>
                         <a href='#value2'
-                            className={"mb-1 md:p-20 p-10 font-bold bg-[url('/CompanyProject.jpg')] bg-cover hover:opacity-100" + (show2 ? " opacity-100" : " opacity-80")}
+                            className={"mb-1 md:p-20 p-10 font-bold bg-[url('/CompanyProject.jpg')] bg-cover bg-center hover:opacity-100" + (show2 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value2")}
                         >
                             Company Project
                         </a>
                         <a href='#value3'
-                            className={"mr-1 md:p-20 p-10 text-center font-bold bg-[url('/Compromise.jpg')] bg-cover hover:opacity-100" + (show3 ? " opacity-100" : " opacity-80")}
+                            className={"mr-1 md:p-20 p-10 text-center font-bold bg-[url('/Compromise.jpg')] bg-cover bg-center hover:opacity-100" + (show3 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value3")}
                         >
                             Compromise
                         </a>
                         <a href='#value4'
-                            className={"md:p-20 p-10 font-bold bg-[url('/Environment.jpg')] bg-cover hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")}
+                            className={"md:p-20 p-10 font-bold bg-[url('/Environment.jpg')] bg-cover bg-center hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")}
                             onClick={() => toggleShow("value4")}
                         >
                             Environment
