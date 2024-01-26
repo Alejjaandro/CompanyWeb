@@ -44,65 +44,56 @@ const Page = () => {
                     </p>
 
                     <div className="w-full grid grid-cols-2 text-center">
-                        <a href='#value1'
-                            className={"mr-1 mb-1 md:p-20 p-10 font-bold bg-[url('/TeamWork.jpg')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value1")}
-                        >
-                            Team Work
-                        </a>
-                        <a href='#value2'
-                            className={"mb-1 md:p-20 p-10 font-bold bg-[url('/CompanyProject.jpg')] bg-cover bg-center hover:opacity-100" + (show2 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value2")}
-                        >
-                            Company Project
-                        </a>
-                        <a href='#value3'
-                            className={"mr-1 md:p-20 p-10 text-center font-bold bg-[url('/Compromise.jpg')] bg-cover bg-center hover:opacity-100" + (show3 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value3")}
-                        >
-                            Compromise
-                        </a>
-                        <a href='#value4'
-                            className={"md:p-20 p-10 font-bold bg-[url('/Environment.jpg')] bg-cover bg-center hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value4")}
-                        >
-                            Environment
-                        </a>
+                        <div className={"mr-1 mb-1 md:p-20 p-10 cursor-pointer font-bold bg-[url('/Support.png')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value1")}>
+                            <a href='#value1' className='block w-full bg-white'>Support</a>
+                        </div>
+                        <div className={"mb-1 md:p-20 p-10 cursor-pointer font-bold bg-[url('/Experience.png')] bg-cover bg-center hover:opacity-100" + (show2 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value2")}>
+                            <a href='#value2' className='block w-full bg-white'>Experience</a>
+                        </div>
+                        <div className={"mr-1 md:p-20 p-10 cursor-pointer text-center font-bold bg-[url('/Success.png')] bg-cover bg-center hover:opacity-100" + (show3 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value3")}>
+                            <a href='#value3' className='block w-full bg-white'>Success</a>
+                        </div>
+                        <div className={"md:p-20 p-10 cursor-pointer font-bold bg-[url('/Knowledge.png')] bg-cover bg-center hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value4")}>
+                            <a href='#value4' className='block w-full bg-white'>Knowledge</a>
+                        </div>
                     </div>
 
                     {show1 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Team Work</h1>
+                        <div className='p-4 my-4' id='value1'>
+                            <h1 className='text-xl font-bold mb-4'>Support</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                At [COMPANY NAME], we understand that the strength of your business lies in the robust support you receive.
+                                Our dedicated team offers personalized assistance, ensuring that every query is addressed with attention and expertise.
+                                We act as pillars for your projects, providing a reliable foundation for every decision and action.
                             </p>
                         </div>
                     )}
                     {show2 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Company Project</h1>
+                        <div className='p-4 my-4' id='value2'>
+                            <h1 className='text-xl font-bold mb-4'>Experience</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                With a rich heritage of industry leadership, [COMPANY NAME] brings to you a wealth of knowledge encapsulated in our service.
+                                Our seasoned professionals are not just consultants; they are narrators of success, having empowered a myriad of businesses to reach their zenith with our proven expertise.
                             </p>
                         </div>
                     )}
                     {show3 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Compromise</h1>
+                        <div className='p-4 my-4' id='value3'>
+                            <h1 className='text-xl font-bold mb-4'>Success</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                Knowledge is the compass that guides our consultancy at [COMPANY NAME].
+                                We cultivate a culture of continuous learning and innovation, which translates into informed strategies for your business.
+                                From the latest industry insights to timeless wisdom, our consultancy equips you with knowledge for a competitive edge.
                             </p>
                         </div>
                     )}
                     {show4 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Environment</h1>
+                        <div className='p-4 my-4' id='value4'>
+                            <h1 className='text-xl font-bold mb-4'>Knowledge</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                At [COMPANY NAME], your success is our mission.
+                                We celebrate every milestone with you and aim for the stars.
+                                Our strategic guidance is designed to turn aspirations into achievements, ensuring that every step we take together is a step towards greater accomplishments.
                             </p>
                         </div>
                     )}

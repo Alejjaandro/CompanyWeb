@@ -43,65 +43,58 @@ const Page = () => {
                     </p>
 
                     <div className="w-full mb-4 grid grid-cols-2 text-center">
-                        <a href='#value1'
-                            className={"mr-1 mb-1 md:p-20 p-10 font-bold bg-[url('/TeamWork.jpg')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value1")}
-                        >
-                            Team Work
-                        </a>
-                        <a href='#value2'
-                            className={"mb-1 md:p-20 p-10 font-bold bg-[url('/CompanyProject.jpg')] bg-cover bg-center hover:opacity-100" + (show2 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value2")}
-                        >
-                            Company Project
-                        </a>
-                        <a href='#value3'
-                            className={"mr-1 md:p-20 p-10 text-center font-bold bg-[url('/Compromise.jpg')] bg-cover bg-center hover:opacity-100" + (show3 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value3")}
-                        >
-                            Compromise
-                        </a>
-                        <a href='#value4'
-                            className={"md:p-20 p-10 font-bold bg-[url('/Environment.jpg')] bg-cover bg-center hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value4")}
-                        >
-                            Environment
-                        </a>
+                        <div className={"mr-1 mb-1 md:p-20 p-10 cursor-pointer font-bold bg-[url('/CreativeProccess.png')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value1")}>
+                            <a href='#value1' className='block w-full bg-white'>Creative Process</a>
+                        </div>
+                        <div className={"mb-1 md:p-20 p-10 cursor-pointer font-bold bg-[url('/TechnologyDesign.png')] bg-cover bg-center hover:opacity-100" + (show2 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value2")}>
+                            <a href='#value2' className='block w-full bg-white'>Technology in Design</a>
+                        </div>
+                        <div className={"mr-1 md:p-20 p-10 cursor-pointer text-center font-bold bg-[url('/ClientCollaboration.png')] bg-cover bg-center hover:opacity-100" + (show3 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value3")}>
+                            <a href='#value3' className='block w-full bg-white'>Client Collaboration</a>
+                        </div>
+                        <div className={"md:p-20 p-10 cursor-pointer font-bold bg-[url('/SustainableDesign.png')] bg-cover bg-center hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value4")}>
+                            <a href='#value4' className='block w-full bg-white'>Sustainable Design</a>
+                        </div>
                     </div>
 
                     {show1 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Team Work</h1>
+                        <div className='p-4 my-4' id='value1'>
+                            <h1 className='text-xl font-bold mb-4'>Creative Process</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                At [COMPANY NAME], our creative process is the heart of innovation. We believe in a collaborative environment where every idea is heard and explored.
+                                Our workshops are incubators for creative thinking, where we map out visions, sketch out possibilities, and prototype the future,
+                                ensuring that every design is not only aesthetically pleasing but also intrinsically meaningful.
                             </p>
                         </div>
                     )}
                     {show2 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Company Project</h1>
+                        <div className='p-4 my-4' id='value2'>
+                            <h1 className='text-xl font-bold mb-4'>Technology in Design</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                We merge the latest technological advancements with our design expertise at [COMPANY NAME].
+                                Our approach harnesses cutting-edge tools to refine and perfect our designs, delivering precision and efficiency.
+                                From 3D modeling to virtual reality, we use technology to bring your vision to life with accuracy and detail that sets new industry standards.
                             </p>
                         </div>
                     )}
                     {show3 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Compromise</h1>
+                        <div className='p-4 my4' id='value3'>
+                            <h1 className='text-xl font-bold mb-4'>Client Collaboration</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                At [COMPANY NAME], collaboration with our clients is the cornerstone of every successful project.
+                                We believe in a partnership approach that invites our clients into every stage of the design process.
+                                Through open communication and shared vision, we co-create designs that truly reflect the unique identity and objectives of each client.
+                                Your insights are invaluable, and together, we turn design concepts into reality with a personal touch.
                             </p>
                         </div>
                     )}
                     {show4 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Environment</h1>
+                        <div className='p-4 my-4' id='value4'>
+                            <h1 className='text-xl font-bold mb-4'>Sustainable Design</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                Sustainability is woven into the fabric of our design philosophy at [COMPANY NAME].
+                                We are committed to creating solutions that are not only beautiful and functional but also environmentally conscious.
+                                Our sustainable design practices ensure that we’re not just designing for today but building a legacy for future generations.
                             </p>
                         </div>
                     )}

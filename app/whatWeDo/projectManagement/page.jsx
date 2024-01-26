@@ -44,65 +44,56 @@ const Page = () => {
                     </p>
 
                     <div className="w-full mb-4 grid grid-cols-2 text-center">
-                        <a href='#value1'
-                            className={"mr-1 mb-1 md:p-20 p-10 font-bold bg-[url('/TeamWork.jpg')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value1")}
-                        >
-                            Team Work
-                        </a>
-                        <a href='#value2'
-                            className={"mb-1 md:p-20 p-10 font-bold bg-[url('/CompanyProject.jpg')] bg-cover bg-center hover:opacity-100" + (show2 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value2")}
-                        >
-                            Company Project
-                        </a>
-                        <a href='#value3'
-                            className={"mr-1 md:p-20 p-10 text-center font-bold bg-[url('/Compromise.jpg')] bg-cover bg-center hover:opacity-100" + (show3 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value3")}
-                        >
-                            Compromise
-                        </a>
-                        <a href='#value4'
-                            className={"md:p-20 p-10 font-bold bg-[url('/Environment.jpg')] bg-cover bg-center hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")}
-                            onClick={() => toggleShow("value4")}
-                        >
-                            Environment
-                        </a>
+                        <div className={"mr-1 mb-1 md:p-20 p-10 cursor-pointer font-bold bg-[url('/StrategicPlanning.png')] bg-cover bg-center hover:opacity-100" + (show1 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value1")}>
+                            <a href='#value1' className='block w-full bg-white'>Strategic Planning</a>
+                        </div>
+                        <div className={"mb-1 md:p-20 p-10 cursor-pointer font-bold bg-[url('/CollaborativeSolutions.png')] bg-cover bg-center hover:opacity-100" + (show2 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value2")}>
+                            <a href='#value2' className='block w-full bg-white'>Collaborative Solutions</a>
+                        </div>
+                        <div className={"mr-1 md:p-20 p-10 cursor-pointer text-center font-bold bg-[url('/RiskManagement.png')] bg-cover bg-center hover:opacity-100" + (show3 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value3")}>
+                            <a href='#value3' className='block w-full bg-white'>Risk Management</a>
+                        </div>
+                        <div className={"md:p-20 p-10 cursor-pointer font-bold bg-[url('/AgileMethodologies.png')] bg-cover bg-center hover:opacity-100" + (show4 ? " opacity-100" : " opacity-80")} onClick={() => toggleShow("value4")}>
+                            <a href='#value4' className='block w-full bg-white'>Agile Methodologies</a>
+                        </div>
                     </div>
 
                     {show1 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Team Work</h1>
+                        <div className='p-4 my-4' id='value1'>
+                            <h1 className='text-xl font-bold mb-4'>Strategic Planning</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                At [COMPANY NAME], strategic planning is the keystone of project management.
+                                We meticulously craft every project roadmap to navigate the complex business landscape, ensuring that every step is aligned with our client&apos;s long-term objectives.
+                                Our strategic foresight enables us to anticipate challenges and pivot with precision.
                             </p>
                         </div>
                     )}
                     {show2 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Company Project</h1>
+                        <div className='p-4 my-4' id='value2'>
+                            <h1 className='text-xl font-bold mb-4'>Collaborative Solutions</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                We believe that the best solutions are born from collective effort.
+                                [COMPANY NAME] fosters a collaborative environment where ideas thrive, roles are clear, and teamwork is paramount.
+                                Together, we build solutions that encapsulate the collective genius of our team and clients.
                             </p>
                         </div>
                     )}
                     {show3 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Compromise</h1>
+                        <div className='p-4 my-4' id='value3'>
+                            <h1 className='text-xl font-bold mb-4'>Risk Management</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                Our risk management protocols are designed to protect your project&apos;s trajectory.
+                                At [COMPANY NAME], we proactively identify potential risks, assess their impact, and implement strategies to mitigate them.
+                                This vigilant approach ensures that your projects are safeguarded against the unforeseen.
                             </p>
                         </div>
                     )}
                     {show4 && (
-                        <div className='p-4' id='value1'>
-                            <h1 className='text-xl font-bold mb-4'>Environment</h1>
+                        <div className='p-4 my-4' id='value4'>
+                            <h1 className='text-xl font-bold mb-4'>Agile Methodologies</h1>
                             <p className='text-s'>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sit, architecto officia hic eligendi debitis ad magnam iste labore cum cumque saepe exercitationem expedita culpa facilis similique aspernatur sunt optio!
-                                Ex iste numquam quam explicabo necessitatibus reiciendis, earum nemo. Possimus, earum non. Accusantium corporis modi delectus nam! Labore illum nostrum possimus beatae impedit quibusdam nihil sed atque dolorum, iste culpa.
+                                Agile methodologies at [COMPANY NAME] empower our teams to deliver results with speed and adaptability.
+                                By embracing iterative processes and continuous feedback, we ensure that our projects remain responsive to changing needs and deliver maximum value at every stage.
                             </p>
                         </div>
                     )}
