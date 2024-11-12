@@ -30,6 +30,13 @@ const Navbar = () => {
                         <li className='p-4 hover:line-through border-b-2'><Link href={`/whoAreWe`}>Who we Are</Link></li>
                     </ul>
                 </div>
+
+                {/* LOGIN */}
+                <div className='mt-10 p-4 flex flex-col gap-4'>
+                    <Link href="/login" className='w-1/2 hover:underline text-pink-700'>Login</Link>
+                    <Link href="/register" className='w-1/2 hover:underline text-sky-800'>Register</Link>
+                </div>
+
                 {/* CONTACT */}
                 <div className='p-4'>
                     <p className='mt-10 mb-4'>Contact</p>
@@ -80,6 +87,13 @@ const Navbar = () => {
                                 </li>
                                 <li className='p-4 hover:line-through border-b-2'><Link href={`/whoAreWe`}>Who we Are</Link></li>
                             </ul>
+
+                            {/* LOGIN */}
+                            <div className='mt-10 p-4 flex flex-col gap-4'>
+                                <Link href="/login" className='w-1/2 hover:underline text-pink-700'>Login</Link>
+                                <Link href="/register" className='w-1/2 hover:underline text-sky-800'>Register</Link>
+                            </div>
+
                             {/* CONTACT */}
                             <div className='p-4'>
                                 <p className='mt-10 mb-4'>Contact</p>
