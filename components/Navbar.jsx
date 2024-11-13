@@ -1,12 +1,25 @@
 "use client"
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+
+import { useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
+import { getUser, logout } from '../redux/userSlice'
+
 
 const Navbar = () => {
     const [sidebar, setSidebar] = useState(false);
     const handleSidebar = () => setSidebar(!sidebar);
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(getUser())
+    }, [dispatch])
+    
+    const user = useSelector(state => state.user)
 
     return (
         <div>
@@ -32,10 +45,17 @@ const Navbar = () => {
                 </div>
 
                 {/* LOGIN */}
-                <div className='mt-10 p-4 flex flex-col gap-4'>
-                    <Link href="/login" className='w-1/2 hover:underline text-pink-700'>Login</Link>
-                    <Link href="/register" className='w-1/2 hover:underline text-sky-800'>Register</Link>
-                </div>
+                {!user ? (
+                    <div className='mt-10 p-4 flex flex-col gap-4'>
+                        <Link href="/login" className='w-1/2 hover:underline text-pink-700'>Login</Link>
+                        <Link href="/register" className='w-1/2 hover:underline text-sky-800'>Register</Link>
+                    </div>
+                ) : (
+                    <div className='mt-10 p-4'>
+                        <p>Welcome! {user.username}</p>
+                        <button onClick={() => dispatch(logout())} className='w-1/2 text-justify uppercase text-pink-700 hover:underline'>Logout</button>
+                    </div>
+                )}
 
                 {/* CONTACT */}
                 <div className='p-4'>
@@ -89,10 +109,17 @@ const Navbar = () => {
                             </ul>
 
                             {/* LOGIN */}
-                            <div className='mt-10 p-4 flex flex-col gap-4'>
-                                <Link href="/login" className='w-1/2 hover:underline text-pink-700'>Login</Link>
-                                <Link href="/register" className='w-1/2 hover:underline text-sky-800'>Register</Link>
-                            </div>
+                            {!user ? (
+                                <div className='mt-10 p-4 flex flex-col gap-4'>
+                                    <Link href="/login" className='w-1/2 hover:underline text-pink-700'>Login</Link>
+                                    <Link href="/register" className='w-1/2 hover:underline text-sky-800'>Register</Link>
+                                </div>
+                            ) : (
+                                <div className='mt-10 p-4'>
+                                    <p>Welcome! {user.username}</p>
+                                    <button onClick={() => dispatch(logout())} className='w-1/2 text-justify uppercase text-pink-700 hover:underline'>Logout</button>
+                                </div>
+                            )}
 
                             {/* CONTACT */}
                             <div className='p-4'>

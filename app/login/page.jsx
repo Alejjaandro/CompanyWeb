@@ -1,13 +1,17 @@
 'use client'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+
+import { useDispatch } from 'react-redux'
+import { login } from '../../redux/userSlice'
 
 const Page = () => {
 
     const router = useRouter()
+    const dispatch = useDispatch()
 
-    const login = (e) => {
+    const onSubmit = (e) => {
         e.preventDefault()
         
         // Save data in local storage
@@ -16,8 +20,7 @@ const Page = () => {
             password: e.target[1].value,
         }
 
-        localStorage.setItem('user', JSON.stringify(user))
-        console.log('Logged in')
+        dispatch(login(user))
 
         // Redirect to home page
         router.push('/')
@@ -31,7 +34,7 @@ const Page = () => {
                     <div className='h-1/2 w-full bg-pink-900 flex flex-col justify-center items-center'>
 
                         <h1 className='text-4xl p-4 uppercase text-white'>Login</h1>
-                        <form action="" method='POST' onSubmit={login}>
+                        <form action="" method='POST' onSubmit={onSubmit}>
                             <div className='flex flex-col gap-4 p-4'>
                                 <input type="email" placeholder='Email' className='p-2 border-2 border-gray-300' required/>
                                 <input type="password" placeholder='Password' className='p-2 border-2 border-gray-300' required/>

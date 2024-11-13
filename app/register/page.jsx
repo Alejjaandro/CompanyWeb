@@ -3,17 +3,17 @@ import Link from 'next/link'
 import React from 'react'
 import { useRouter } from 'next/navigation'
 
-const Page = () => {
-    const router = useRouter()
+import { useDispatch } from 'react-redux'
+import { register } from '../../redux/userSlice'
 
-    const register = (e) => {
+const Page = () => {
+    
+    const router = useRouter()
+    const dispatch = useDispatch()
+
+    const onSubmit = (e) => {
         e.preventDefault()
         
-        if (e.target[4].value !== e.target[5].value) {
-            console.log('Passwords do not match')
-            return
-        }
-
         // Save data in local storage
         const user = {
             name: e.target[0].value,
@@ -22,8 +22,8 @@ const Page = () => {
             username: e.target[3].value,
             password: e.target[4].value,
         }
-        localStorage.setItem('user', JSON.stringify(user))
-        console.log('Register')
+
+        dispatch(register(user))
 
         // Redirect to home page
         router.push('/')
@@ -37,7 +37,7 @@ const Page = () => {
                     <div className='h-min w-full p-6 bg-sky-900 text-white flex flex-col justify-center items-center'>
 
                         <h1 className='text-4xl p-4 uppercase'>Register</h1>
-                        <form action="" method='POST' onSubmit={register}>
+                        <form action="" method='POST' onSubmit={onSubmit}>
                             <div className='flex flex-col gap-4 p-4 md:grid md:grid-cols-2 text-black'>
                                 <input type="text" placeholder='Name' className='p-2 border-2 border-gray-300' required/>
                                 <input type="text" placeholder='Lastname' className='p-2 border-2 border-gray-300' required/>

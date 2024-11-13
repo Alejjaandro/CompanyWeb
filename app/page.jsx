@@ -14,11 +14,13 @@ export default function Home() {
                     <div className="bg-[url('/Marketing.png')] bg-cover bg-center" />
                 </div>
                 {/* TITLE */}
-                <div className="relative top-[-50%] mt-[-78.5px] text-center">
-                    <h1 className="uppercase text-4xl font-semibold text-white">Home</h1>
-                    <button className='mt-10 p-4 text-xl border-4 text-white hover:bg-gray-200'>
-                        <Link href={`/whatWeDo`}>WHAT WE DO</Link>
-                    </button>
+                <div className="relative top-[-50%] mt-[-78.5px] text-center flex justify-center">
+                    <div className="bg-black w-fit p-8">
+                        <h1 className="uppercase text-4xl font-semibold text-white">Home</h1>
+                        <button className='mt-10 p-4 text-xl border-4 text-white hover:bg-gray-200'>
+                            <Link href={`/whatWeDo`}>WHAT WE DO</Link>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
